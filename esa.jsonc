@@ -1,5 +1,5 @@
 {
-  "installCommand": "python3 -m venv .venv && .venv/bin/pip install mkdocs mkdocs-material --index-url https://pypi.tuna.tsinghua.edu.cn/simple/ && chmod +x ./scripts/pre-build/install-theme.sh && ./.venv/bin/python ./scripts/pre-build/install-theme.sh",
+  "installCommand": "python3 -m venv .venv && .venv/bin/pip install --upgrade pip && .venv/bin/pip install mkdocs mkdocs-material --index-url https://pypi.tuna.tsinghua.edu.cn/simple/ && chmod +x ./scripts/pre-build/install-theme.sh && ./.venv/bin/python ./scripts/pre-build/install-theme.sh",
   "buildCommand": ".venv/bin/mkdocs build -v",
   "assets": {
     "directory": "./site"
