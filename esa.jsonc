@@ -1,6 +1,6 @@
 {
-  "installCommand": "python3 -m venv .venv && .venv/bin/pip install --upgrade pip && .venv/bin/pip install mkdocs mkdocs-material --index-url https://pypi.tuna.tsinghua.edu.cn/simple/ && chmod +x ./scripts/pre-build/install-theme.sh && ./scripts/pre-build/install-theme.sh",
-  "buildCommand": ".venv/bin/mkdocs build -v",
+  "installCommand": "python3 -m venv .venv && .venv/bin/pip install --upgrade pip && .venv/bin/pip install mkdocs mkdocs-material mkdocs-git-committers-plugin mkdocs-git-revision-date-localized-plugin pymdown-extensions --index-url https://pypi.tuna.tsinghua.edu.cn/simple/ && chmod +x ./scripts/pre-build/install-theme.sh && ./scripts/pre-build/install-theme.sh",
+  "buildCommand": "export PYTHONPATH=\"$PWD:$PYTHONPATH\" && .venv/bin/mkdocs build -v",
   "assets": {
     "directory": "./site"
   }
